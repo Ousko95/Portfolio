@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <nav>
+        <div class="logo">Portfolio de Ousmane Soukouna</div>
+        <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- Section Accueil -->
+<section id="accueil">
+    <div class="hero-bg"></div>
+    <div class="accueil-container">
+        <div class="accueil-texte">
+            <h1 class="animate-text">Bienvenue sur mon portfolio !</h1>
+            <p class="animate-text">
+                Je suis <strong>SOUKOUNA Ousmane</strong>, actuellement étudiant en BUT Génie électrique et informatique industrielle souhaitant me réorienter vers une formation plus centrée sur l'administration des réseaux et systèmes, ou encore le développement.
+            </p>
+            <a href="#projets" class="btn animate-btn">Voir mes projets</a>
+        </div>
+        <div class="accueil-image">
+            <img src="acceuil.jpg" alt="Photo de Ousmane Soukouna">
+        </div>
+    </div>
+</section>
+<!-- Section Compétences -->
+<section id="competences">
+    <h2>Compétences</h2>
+    <div class="competence-container">
+        <div class="competences-list">
+            <h3>Hard Skills</h3>
+            <div class="competence-card">
+                <img src="imagescompetence1.png" alt="HTML">
+                <p>Programmation "HTML,C,Python,Grafcet"</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence2.png" alt="CSS">
+                <p>Conception et modification de
+                    grafcets et logigrammes</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence3.png" alt="JavaScript">
+                <p>Connaissance des composants
+                    électroniques</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence4.png" alt="PHP">
+                <p>Esprit d’analyse et de résolution de
+                    problèmes</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence5.png" alt="SQL">
+                <p>Prise en main de logiciel rapide</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence6.png" alt="React">
+                <p>Lecture et interprétation de schémas techniques</p>
+            </div>
+        </div>
+        <div class="competences-list">
+            <h3>Soft Skills</h3>
+            <div class="competence-card">
+                <img src="imagescompetence9.png">
+                <p>Capacité à travailler en équipe</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence10.png">
+                <p>Gestion du temps</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence11.png">
+                <p>Fait preuve d'une certaine créativité</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence12.png">
+                <p>Respect des règles de sécurité</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence14.png">
+                <p>Bonne organisation</p>
+            </div>
+            <div class="competence-card">
+                <img src="imagescompetence15.png">
+                <p>Adaptabilité et apprentissage rapide</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section Projets -->
+<section id="projets">
+    <h2>Projets</h2>
+    <div class="project-grid">
+        <!-- Projet 1 -->
+        <div class="project-card">
+            <img src="alarme.jpg">
+            <h3>Projet d'un sytème d'alarme</h3>
+            <p>Ce projet vise à concevoir et utiliser des circuits intégrés programmables pour mettre en place un système d'alarme se déclenchant lors de la saisie d'un code erroné. Il s'inscrit dans l'apprentissage de la conception, simulation et implémentation de circuits logiques grâce au logiciel Quartus.</p>
+            <a href="Rapport Alarme.pdf" download>Télécharger le rapport</a>
+        </div>
+        <!-- Projet 2 -->
+        <div class="project-card">
+            <img src="robot.jpg" alt="Projet 2">
+            <h3>Projet d'un robot aspirateur</h3>
+            <p>L'objectif de ce projet est d'étudier les capteurs clés du robot aspirateur permettant son fonctionnement autonome. L'étude se divise en deux parties : la détection des obstacles et la détection du vide avec l'utilisation du logiciel Arduino.</p>
+            <a href="Rapport Robot.pdf" download>Télécharger le rapport</a>
+        </div>
+    </div>
+</section>
+<!-- Section Contact -->
+<section id="contact">
+    <h2>Contactez-moi</h2>
+    <div class="contact-form">
+        <input type="text" id="name" placeholder="Votre nom" required>
+        <input type="email" id="email" placeholder="Votre email" required>
+        <textarea id="message" placeholder="Votre message" rows="5" required></textarea>
+        <button onclick="handleSubmit(event)">Envoyer</button>
+    </div>
+</section>
+<!-- Notification -->
+<div id="notification">Votre message à bien été envoyé!</div>
+<!-- Footer -->
+<footer>
+    <p>© 2025 Ousmane SOUKOUNA - Tous droits réservés</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
